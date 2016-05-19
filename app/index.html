@@ -5,6 +5,7 @@
         <title>Angular ES6 app</title>
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
         <script src="vendor/angular/angular.min.js"></script>
+        <script src="vendor/angular-ui-router/release/angular-ui-router.js"></script>
         <script src="vendor/system.js/dist/system.js"></script>
 
         <script>
@@ -16,7 +17,7 @@
         </script>
 
     </head>
-    <body ng-controller="MainCtrl as main">
-        {{ main.name }}
+    <body>
+        <div ui-view></div>
     </body>
 </html>
