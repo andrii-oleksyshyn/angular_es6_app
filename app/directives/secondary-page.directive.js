@@ -2,9 +2,9 @@ export function secondaryPage() {
     var directive = {
         restrict: 'E',
         scope: {},
-        templateUrl: 'views/secondary.html',
+        templateUrl: 'directives/secondary.html',
         controller: SecondaryCtrl,
-        controllerAs: 'secondary',
+        controllerAs: 'ctrl',
         bindToController: true
     };
     return directive;

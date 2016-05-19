@@ -1,13 +1,4 @@
-function appRoutes($stateProvider, $urlRouterProvider) {
-    /*let resolveBreadcrumbs = {
-        ResolveData : ($stateParams, breadcrumbs) => {
-            const proj = $stateParams.projectId;
-            if (proj) {
-                return breadcrumbs.configureProjectNameAndOrigin(proj);
-            }
-        }
-    };*/
-
+function appRoutes($locationProvider, $stateProvider) {
     $stateProvider
         .state('main', {
             url: '/',
@@ -20,15 +11,14 @@ function appRoutes($stateProvider, $urlRouterProvider) {
         .state('inner', {
             url: '/inner',
             template: '<inner-page></inner-page>'
-            //resolve: resolveBreadcrumbs
-        })
-        .state('404', {
-            url: '/404',
-            template: '404 Not Found',
         });
-    $urlRouterProvider.otherwise('/404');
+
+    $locationProvider.html5Mode({
+        enabled: true,
+        requireBase: false
+    });
 }
 
-appRoutes.$inject = ['$stateProvider', '$urlRouterProvider'];
+appRoutes.$inject = ['$locationProvider', '$stateProvider'];
 
 export { appRoutes };

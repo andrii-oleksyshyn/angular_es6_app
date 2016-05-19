@@ -2,9 +2,9 @@ export function innerPage() {
     var directive = {
         restrict: 'E',
         scope: {},
-        templateUrl: 'views/inner.html',
+        templateUrl: 'directives/inner.html',
         controller: InnerCtrl,
-        controllerAs: 'inner',
+        controllerAs: 'ctrl',
         bindToController: true
     };
     return directive;

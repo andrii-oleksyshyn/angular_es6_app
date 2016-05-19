@@ -2,9 +2,9 @@ export function mainPage() {
     var directive = {
         restrict: 'E',
         scope: {},
-        templateUrl: 'views/main.html',
+        templateUrl: 'directives/main.html',
         controller: MainCtrl,
-        controllerAs: 'main',
+        controllerAs: 'ctrl',
         bindToController: true
     };
     return directive;
@@ -13,5 +13,23 @@ export function mainPage() {
 class MainCtrl {
     constructor() {
         this.name = "MainCtrl";
+        this.obj = [
+            {
+                value: 'Main',
+                url: '/'
+            },
+            {
+                value: 'Secondary',
+                url: '/secondary'
+            },
+            {
+                value: 'Inner',
+                url: '/inner'
+            },
+            {
+                drop:[
+                ]
+            }
+        ];
     }
 }
