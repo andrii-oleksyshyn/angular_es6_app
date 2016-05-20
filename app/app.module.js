@@ -1,9 +1,9 @@
 'use strict';
 
-import {mainPage} from 'directives/main-page.directive';
-import {secondaryPage} from 'directives/secondary-page.directive';
-import {innerPage} from 'directives/inner-page.directive';
-import {breadcrumbs} from 'directives/breadcrumbs.directive';
+import {mainPage} from 'components/main-page/main-page.directive';
+import {secondaryPage} from 'components/secondary-page/secondary-page.directive';
+import {innerPage} from 'components/inner-page/inner-page.directive';
+import {breadcrumbs} from 'components/breadcrumbs/breadcrumbs.directive';
 import {appRoutes} from 'app.routes';
 
 angular

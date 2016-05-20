@@ -2,7 +2,7 @@ export function innerPage() {
     var directive = {
         restrict: 'E',
         scope: {},
-        templateUrl: 'directives/inner.html',
+        templateUrl: 'components/inner-page/inner.html',
         controller: InnerCtrl,
         controllerAs: 'ctrl',
         bindToController: true

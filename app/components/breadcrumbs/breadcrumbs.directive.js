@@ -4,7 +4,7 @@ export function breadcrumbs() {
         scope: {
             breadcrumbsObject: "="
         },
-        templateUrl: 'directives/breadcrumbs.html',
+        templateUrl: 'components/breadcrumbs/breadcrumbs.html',
         controller: BreadcrumbsCtrl,
         controllerAs: 'ctrl',
         bindToController: true

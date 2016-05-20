@@ -2,7 +2,7 @@ export function secondaryPage() {
     var directive = {
         restrict: 'E',
         scope: {},
-        templateUrl: 'directives/secondary.html',
+        templateUrl: 'components/secondary-page/secondary.html',
         controller: SecondaryCtrl,
         controllerAs: 'ctrl',
         bindToController: true

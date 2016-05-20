@@ -2,7 +2,7 @@ export function mainPage() {
     var directive = {
         restrict: 'E',
         scope: {},
-        templateUrl: 'directives/main.html',
+        templateUrl: 'components/main-page/main.html',
         controller: MainCtrl,
         controllerAs: 'ctrl',
         bindToController: true
